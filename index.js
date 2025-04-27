@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 app.use(cors({
-  origin: "https://job-portal-frontend-sayam-taks-projects.vercel.app", 
+  origin: "https://job-portal-api-r2qk.onrender.com", 
   credentials: true,
 }));
 // app.use(cors({
