@@ -16,12 +16,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
-const corsOptions = {
-  origin: ["https://job-portal-frontend-sayam-taks-projects.vercel.app/"],
+app.use(cors({
+  origin: "https://job-portal-frontend-sayam-taks-projects.vercel.app", 
   credentials: true,
-};
-
-app.use(cors(corsOptions));
+}));
 // app.use(cors({
 //   origin:true,
 //   methods:[ "GET","POST","PUT","DELETE"],
